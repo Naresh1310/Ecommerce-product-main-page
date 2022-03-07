@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce-main-product-page</title>
+    <link rel="icon" href="./favicon.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navigation border-bottom">
+            <div class="mobile-menu">
+                <img class="menu-img" src="./images/icon-menu.svg" alt="phone menu" />
+                <img class="menu-close hidden" src="./images/icon-close.svg" alt="phone menu" />
+            </div>
+            <img class="logo" src="./images/logo.svg" alt="logo" />
+            <div class="nav-links ">
+                <div>Collection</div>
+                <div>Men</div>
+                <div>Women</div>
+                <div>About</div>
+                <div>Contact</div>
+            </div>
+        </nav>
+        <div class="user-section">
+            <div class="top-cart-img">
+                <img class="cart-img" src="./images/icon-cart.svg" alt="cart image" />
+                <span class="cart-tag hidden">1</span>
+            </div>
+            <img class="user-profile-img"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt="user profile" />
+        </div>
+    </header>
+    <div class="overlay hidden"></div>
+    <!-- IMAGE POPUP -->
+    <div class="image-popup hidden">
+        <div class="big-img">
+            <button class="close-popup">
+                <svg xmlns="http://www.w3.org/2000/svg" class="close-btn" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <img class="main-pop-up" src="./images/image-product-1.jpg" />
+            <div class="btn-left">
+                <svg xmlns="http://www.w3.org/2000/svg" class="left-btn" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+            </div>
+            <div class="btn-right">
+                <svg xmlns="http://www.w3.org/2000/svg" class="right-btn" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+            </div>
+        </div>
+        <div class="small-img">
+            <!-- <img src="./images/image-product-1-thumbnail.jpg" alt="image thumbnai" />
+            <img src="./images/image-product-2-thumbnail.jpg" alt="image thumbnai" />
+            <img src="./images/image-product-3-thumbnail.jpg" alt="image thumbnai" />
+            <img src="./images/image-product-4-thumbnail.jpg" alt="image thumbnai" /> -->
+            <img class="thumbnail-image" src="./images/image-product-1-thumbnail.jpg" alt="thubmnail image"
+                name="image-product-1" />
+
+            <img class="thumbnail-image" src="./images/image-product-2-thumbnail.jpg" alt="thubmnail image"
+                name="image-product-2" />
+
+            <img class="thumbnail-image" src="./images/image-product-3-thumbnail.jpg" alt="thubmnail image"
+                name="image-product-3" />
+
+            <img class="thumbnail-image" src="./images/image-product-4-thumbnail.jpg" alt="thubmnail image"
+                name="image-product-4" />
+        </div>
+    </div>
+
+    <main>
+        <section class="product-section">
+
+            <!-- CART ITEMS -->
+            <div class="cart-info hidden">
+                <div class="header-cart">
+                    <div>Cart</div>
+                    <button class="close-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="close-cart-btn" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="cart-item-holder ">
+                    <!-- <div class="cart-item">
+                        <img class="cart-item-img" src="./images/image-product-1-thumbnail.jpg" alt="product image" />
+                        <p class="cart-item-text">
+                            Fall Limited Edition Sneakers <br>$128.00*3 <strong>$375.00</strong>
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="cart-item-delete" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
+                    </div>
+                    <button class="checkout">Checkout</button> -->
+
+                </div>
+                <div class="cart-text">Your cart is empty</div>
+            </div>
+
+
+            <div class="product-section-img">
+                <div class="main-img-holder ">
+                    <img class="main-img" src="./images/image-product-1.jpg" alt="product-img" />
+
+                    <!-- BTN FOR MOBILE -->
+                    <div class="btn-mobile">
+                        <div class="btn-main-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mobile-btn-left" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </div>
+                        <div class="btn-main-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mobile-btn-right" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="thumbnail-images">
+
+                    <img class="thumbnail-image" src="./images/image-product-1-thumbnail.jpg" alt="thubmnail image"
+                        name="image-product-1" />
+
+                    <img class="thumbnail-image" src="./images/image-product-2-thumbnail.jpg" alt="thubmnail image"
+                        name="image-product-2" />
+
+                    <img class="thumbnail-image" src="./images/image-product-3-thumbnail.jpg" alt="thubmnail image"
+                        name="image-product-3" />
+
+                    <img class="thumbnail-image" src="./images/image-product-4-thumbnail.jpg" alt="thubmnail image"
+                        name="image-product-4" />
+                </div>
+            </div>
+            <div class="product-details">
+                <p class="sub-heading">
+                    sneaker company
+                </p>
+                <h1 class="product-title">
+                    Fall Limited Edition Sneaker
+                </h1>
+                <p class="product-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam libero eligendi doloremque vero
+                    tempora accusantium. Suscipit fuga iusto exercitationem, dolore ratione veritatis saepe est quia.
+                </p>
+                <div class="price-holder">
+                    <div class="price">
+                        $125.00
+                    </div>
+                    <div class="strike-text">
+                        $250.00
+                    </div>
+                </div>
+
+                <div class="button-section">
+                    <div class="quantity">
+                        <div class="minus">-</div>
+                        <div class="value">0</div>
+                        <div class="plus">+</div>
+                    </div>
+                    <div class="btn-addtocart">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="cart-img" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        Add to cart
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
